@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:   hsl(0, 0%, 86%);
+}
+
+main,.YearResults,
+.DaysResults,.MonthResults,
+.Numbers,.LabelAdjust,
+.DateOFBirth{
+    display: flex;
+}
+
+p,.ResultsDisplayed{
+    font-weight: bold;
+}
+main,.LabelAdjust{
+    flex-direction: column;
+}
+
+main{
+    width: 80%;
+    height: 350px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+    border-bottom-right-radius: 100px;
+}
+
+label{
+    margin-bottom: 5px;
+}
+
+img{
+    width:30px;
+    height: 30px;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 10px;
+    align-self: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+hr{
+    margin-top: -45px;
+    
+}
+.DateOFBirth{
+    justify-content: space-around;
+}
+
+input{
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0px 10px;
+
+}
+.LabelAdjust{
+    flex-basis: 30%;
+}
+
+.Results{
+    margin-top: 50px;
+}
+
+.CommonValue{
+    width: 20px;
+    height: 5px;
+    background-color: hsl(259, 100%, 65%);
+    margin-right: 10PX;
+}
+
+
+.ResultsDisplayed{
+    color: hsl(259, 100%, 65%);
+    font-size:1.7rem;
+    margin-right: 5px;
+}
+
+p{
+    font-size: 2rem;
+}
+.Numbers{
+    flex-basis: 20%;
+    float:right
+}
+.YearResults,.DaysResults,.MonthResults{
+    align-items: center;
+    margin-left: 30%;
+}
+
+input,img{
+    cursor: pointer;
+}
+
+img:hover{
+    background-color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.ErrorMessage{
+    color: red;
+    margin: 5px 0px;
+    font-size: 0.7rem;
+}
+
+.Hidden{
+    display: none;
+}
+
+@media(min-width:700px){
+    main{
+        width: 45%;
+
+    }
+
+    p{
+        font-size: 2.5rem;
+    }
+    
+    .ResultsDisplayed{
+        font-size: 2rem;
+    }
+    img{
+        align-self:flex-end;
+        margin: 20px 0px;
+    }
+}

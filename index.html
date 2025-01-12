@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+      <div class="DateOFBirth">
+        <div class="LabelAdjust">
+          <label for="day" id="DayLabel">DAY</label>
+        <input type="text" name="day" id="Day" placeholder="DD" maxlength="2">
+        <p class="ErrorMessage Hidden" id="DayError">This field is required</p>
+        <p class="ErrorMessage Hidden" id="ValidDayError">Please enter a valid day</p>
+        
+        </div>
+      <div class="LabelAdjust">
+        <label for="month" id="MonthLabel" >MONTH</label>
+        <input type="text" name="month" id="Month" placeholder="MM" maxlength="2">
+        <p class="ErrorMessage Hidden" id="MonthError">This field is required</p>
+        <p class="ErrorMessage Hidden" id="ValidMonthError">Please enter a valid month</p>
+      </div>
+        <div class="LabelAdjust">
+          <label for="year" id="YearLabel" >YEAR</label>
+        <input type="text" name="year" id="Year" placeholder="YYYY" maxlength="4">
+        <p class="ErrorMessage Hidden" id="YearError">This field is required</p>
+        <p class="ErrorMessage Hidden" id="ValidYearError">Please enter a valid year</p>
+        </div>
+      </div>
+      <img src="assets/images/icon-arrow.svg" alt="" onclick="SubmitButton()">
+      <hr>
+
+      <div class="Results">
+        <div class="YearResults">
+         <div class="Numbers" id="Dash1">
+          <div class="CommonValue"></div>
+          <div class="CommonValue"></div>
+         </div>
+         <div id="YearDisplay" class="ResultsDisplayed"></div>
+         <div><p>years</p></div> 
+        </div>
+        <div class="MonthResults ">
+          <div class="Numbers" id="Dash2">
+            <div class="CommonValue"></div>
+            <div class="CommonValue"></div>
+          </div>
+          <div id="MonthDisplay" class="ResultsDisplayed"></div>
+          <div><p>months</p></div>
+
+        </div>
+        <div class="DaysResults">
+          <div class="Numbers" id="Dash3">
+            <div class="CommonValue"></div>
+            <div class="CommonValue"></div>
+          </div>
+          <div id="DayDisplay" class="ResultsDisplayed"></div>
+          <div><p>days</p></div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
+
